@@ -1,3 +1,22 @@
+<sub>Dec 6, 2021</sub>
+### Negative Generators
+
+What happens when a power plant is reporting negative power? Thanks to a tip from an API user, we've been looking into this recently: what does it mean when a region says it produced -4 MW from natural gas?
+
+Power plants consume electricity themselves, and occasionally, when they're still running but their output isn't needed for a time, they might burn more power than they generate. Even more occasionally, sometimes demand for a particular fuel type in a region is so low that all power plants of that type are sitting idle, and the total region-wide sum of power generated is negative.
+
+So, what's the carbon intensity of negative power? This edge case raises some interesting philosophical questions (*Am I responsible for emissions that didn't come from producing any power?*), as well as practical ones: *What's the intensity of an idling natural gas plant?*. It isn't zero, and it certainly isn't negative - these plants aren't absorbing CO<sub>2</sub> out of the air while they're sitting idle.
+
+To be frank, we're still thinking about the best way to handle this, and as is so often the case in carbon accounting, there's more than one valid answer. For now, we're treating these negative values as zeros, with a corresponding carbon intensity of 0 lbs/MWh. The EPA eGRID intensity model [already accounts for negative generation](https://www.epa.gov/egrid/egrid-questions-and-answers#egrid10aa), so over a longer period of time, these brief periods of 0 emissions should be balanced out by slightly higher emissions when generation is positive. This approach is straightforward, but it's not ideal, and you can expect future changelogs to note updates as we continue to investigate.
+
+#### Improvements and fixes:
+- Fixed brief outage in EIA generation and interchange scrapers
+- Correct misspelled fuel types from some historical sources
+- Marginal carbon intensity calculation now better handles missing fuel mix events
+
+<br />
+<hr />
+
 <sub>Oct 4, 2021</sub>
 ### Continuously Improving Data Quality
 We collect data from a lot of sources, and we've seen many different ways that data can be flawed. Maybe an ISO unexpectedly changes its reporting format, or reports all 0s for an interval, or stops updating at all for an hour or two, or any number of other problems. We've spent the last couple weeks improving our system of monitoring data quality to detect these issues, and just as importantly, correct them as soon as possible. 
