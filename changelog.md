@@ -1,3 +1,18 @@
+<sub>March 7, 2022</sub>
+### Expanding Singularity's Team
+
+We’ve quadrupled the size of our engineering team, bringing on two new software engineers and a data scientist. With more engineering bandwidth, you can expect lots of upcoming improvements to API performance, data quality, and documentation.
+
+One of the first priorities of our expanded team has been to build on the data quality improvements described in past changelogs (for some background, take a look at our October 2021 changelog). Each of the data sources we collect from has a different set of anomalies, time gaps, and other issues that need to be detected and fixed. To ensure consistent data quality,we customize issue detection and handling for each source. This month, we’ve added data issue handling for EIA, and expanded our quality checks for ISONE.
+
+
+#### Improvements and fixes:
+- We updated our handling of EIA data issues to reflect the detection and imputation of anomalous data performed during EIA’s own analysis. This means you have access to the same imputed data EIA uses to compile monthly and annual summaries – but we flag imputed values, so you know whether you’re seeing real or imputed data
+- We now audit our database daily to detect missing and anomalous data from EIA and ISONE and re-collect it when possible
+
+<br />
+<hr />
+
 <sub>Dec 6, 2021</sub>
 ### Negative Generators
 
@@ -19,7 +34,7 @@ To be frank, we're still thinking about the best way to handle this, and as is s
 
 <sub>Oct 4, 2021</sub>
 ### Continuously Improving Data Quality
-We collect data from a lot of sources, and we've seen many different ways that data can be flawed. Maybe an ISO unexpectedly changes its reporting format, or reports all 0s for an interval, or stops updating at all for an hour or two, or any number of other problems. We've spent the last couple weeks improving our system of monitoring data quality to detect these issues, and just as importantly, correct them as soon as possible. 
+We collect data from a lot of sources, and we've seen many different ways that data can be flawed. Maybe an ISO unexpectedly changes its reporting format, or reports all 0s for an interval, or stops updating at all for an hour or two, or any number of other problems. We've spent the last couple weeks improving our system of monitoring data quality to detect these issues, and just as importantly, correct them as soon as possible.
 
 We're focused on five dimensions of quality:
 
