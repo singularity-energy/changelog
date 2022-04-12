@@ -1,4 +1,21 @@
-<sub>March 7, 2022</sub>
+<sub>Apr 8, 2022</sub>
+### Compliance Tools
+
+![Screenshot of embedded compliance widget](https://raw.githubusercontent.com/singularity-energy/changelog/main/compliance.png)
+
+We've released a new [Compliance API](https://singularity-energy.stoplight.io/docs/compliance-api/q9jvlplq-singularity-compliance-api), along with the companion web app shown above, to allow building owners to explore how they're performing against applicable carbon regulations, and what their options are to reduce emissions. The initial release covers New York City's [Local Law 97](https://www1.nyc.gov/site/sustainablebuildings/ll97/local-law-97.page), and future releases will cover Boston's [BERDO](https://www.boston.gov/departments/environment/building-emissions-reduction-and-disclosure) and beyond, as climate regulations (hopefully) sweep the nation in coming years.
+
+If you're interested in trying out the API or embedding the compliance tool into your own web app, reach out!
+
+#### New API Docs
+
+No more Google Docs! We're testing a new documentation platform - [check it out](https://singularity-energy.stoplight.io/). This is still a work in progress, so you can expect more improvements and content before this goes live in the next few weeks. As always, if you have any feedback, we're all ears.
+
+
+<br />
+<hr />
+
+<sub>Mar 7, 2022</sub>
 ### Expanding Singularity's Team
 
 We’ve quadrupled the size of our engineering team, bringing on two new software engineers and a data scientist. With more engineering bandwidth, you can expect lots of upcoming improvements to API performance, data quality, and documentation.
@@ -12,6 +29,22 @@ One of the first priorities of our expanded team has been to build on the data q
 
 <br />
 <hr />
+
+<sub>Jan 15, 2022</sub>
+### Imports and Exports
+
+The simplest method of calculating grid carbon intensity is to look at the fuel mix reported by the grid operator - a breakdown of which types of power plants are producing electricity for the grid at a given time. This is `generated_rate`, the default for much of our API. But this methodology excludes an often important factor: imports and exports. In addition to its own generation, Grid A may be importing fuel from Grid B, which may itself be importing from Grids C and D, and so on. The picture quickly becomes complex. In order to calculate Grid A's carbon intensity, we'll need to look at the fuel mix and imports and exports of potentially many other grids.
+
+The result of this calculation is `consumed_rate`, available for all EIA regions in our API. But this methodology is vulnerable to a wide array of data quality issues. Instead of relying on a single source, we need data from every grid operator in the grid interchange graph. There can also be conflicting data - what happens when New York and New England both claim to be exporting electricity to each other at the same time? Recently we've been working on cleaning up the data underlying our `consumed_rate` calculations, and filling in as many gaps as possible. It's an ongoing process, but if you're using this rate you'll see more consistent results as we're constantly improving the data pipeline.
+
+#### We're Hiring!
+If you know anyone who is passionate about decarbonization, has software or data science experience, and wants to learn more, check out the job descriptions below and please reach out!
+
+[Jobs at Singularity Energy](https://angel.co/company/singularity-energy/jobs)
+
+<br />
+
+***
 
 <sub>Dec 6, 2021</sub>
 ### Negative Generators
