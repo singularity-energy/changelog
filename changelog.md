@@ -1,5 +1,20 @@
-<sub>Apr 8, 2022</sub>
-### Compliance Tools
+<sub>May 12, 2022</sub>
+### New Documentation
+
+As promised in our last changelog, we've been hard at work on our new documentation center. Take a look: https://singularity-energy.stoplight.io/. In addition to interactive API endpoint documentation, we now have articles explaining our geographic coverage, emissions methodology, carbon event terminology, and more.
+
+We think this is a big improvement over our current docs, and should help users get the most out of our API. If you have any feedback, suggestions, comments, feel free to email us at info@singularity.energy.
+
+#### Security Improvements
+
+Security is a continuous process, and we're always making improvements and monitoring our systems in the background. No news is good news here - hopefully you'll never have to think about our security practices! However, there's one new development to highlight: we've initiated a third party penetration test, to ensure our systems and controls are solid. This will be an annual exercise, and once the first test is complete we'll be happy to provide the resulting report upon request.
+
+
+<br />
+<hr />
+
+<sub>Apr 12, 2022</sub>
+### Compliance API
 
 ![Screenshot of embedded compliance widget](https://raw.githubusercontent.com/singularity-energy/changelog/main/compliance.png)
 
