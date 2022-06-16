@@ -1,3 +1,22 @@
+<sub>June 16, 2022</sub>
+### Seed Funding
+
+A few weeks ago we announced that we've raised $4.5M in seed funding led by Spero Ventures and Energy Impact Partners, as well as $1.2M in National Science Foundation SBIR grants. Today, grid operators, utilities, and businesses have a limited understanding of their grid carbon emissions due to the lack of high-quality, time and location-based grid emissions data. Our mission is to change that by providing transparent and accurate data to grid operators, utilities, and businesses about their grid carbon emissions, while supplying them with actionable decarbonization insights and automated decision making via their platform.
+
+You can read more about the investment in our [Medium post](https://medium.com/singularity-energy/thrilled-to-announce-that-weve-raised-4-5m-101f416ae344), and on [TechCrunch](https://techcrunch.com/2022/05/24/a-single-question-changed-how-singularity-viewed-its-market/).
+
+#### Coming Soon
+
+We've got a number of projects brewing behind the scenes that we're excited to announce later this year. Here's a sneak peak of one: our **V2 API**. We'll soon be inviting you to try out the next generation of our API, which is faster, more powerful, more auditable, and overall much easier to use.
+
+
+#### Documentation
+
+Just a reminder: our [new docs](https://docs.singularity.energy/) are much, much better than the old ones. They go well beyond technical API details - in particular, you might want to check out our [Key Concepts overview](https://singularity-docs.stoplight.io/docs/singularity-api/key-concepts), which helps answer a lot of questions about how to get the most out of the API.
+
+<br />
+<hr />
+
 <sub>May 12, 2022</sub>
 ### New Documentation
 
