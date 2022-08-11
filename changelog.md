@@ -1,3 +1,14 @@
+<sub>August 11, 2022</sub>
+### Infrastructure Automation
+
+We've spent a substantial amount of effort automating the maintenance and deployment of our entire infrastructure, upgrading most of it along the way for improved security and performance. What does this mean for you? If we've done things correctly, you shouldn't notice anything at all. It's more about what you won't see - no service outages, no performance issues, no security incidents. This effort also lays the groundwork for us to smoothly scale our API to an increasing number of users and an ever-growing amount of data.
+
+#### The Return of EIA
+
+They were down for more than a month, but happy to announce that EIA systems are finally [back online](https://www.eia.gov/pressroom/releases/press514.php) and publishing every day. We've backfilled all data from the period EIA was down, so we once again have full uninterrupted coverage of the continental US.
+
+This was an outage of unprecedented length, and we hopefully won't see anything like it for a long time. When there are issues of this magnitude, you can look for information and updates on our [status page](https://singularity.instatus.com/), and you may also receive direct communication from us depending on the severity of the issue.
+
 <sub>June 16, 2022</sub>
 ### Seed Funding
 
