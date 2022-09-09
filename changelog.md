@@ -14,7 +14,7 @@ We're also announcing the public release of our [MISO Historical Emissions Map](
 We've been working hard on both these projects for quite a while behind the scenes, and you can expect to see continued development and improvements in future changelogs.
 
 #### Other improvements and fixes:
-- Updated BPA scraper to add solar
+- Added solar to BPA fuel mix
 
 <sub>August 11, 2022</sub>
 ### Infrastructure Automation
