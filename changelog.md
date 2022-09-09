@@ -1,3 +1,21 @@
+<sub>September 9, 2022</sub>
+### Open Grid Emissions Initiative
+
+![Animation of hourly regional carbon intensities over one day in the US](https://raw.githubusercontent.com/singularity-energy/changelog/main/oge.gif)
+
+We are very proud to announce the initial release of Open Grid Emissions (OGE) - an open source dataset of hourly US grid generation, carbon intensity, and air pollution data. [Get free access to the data](https://singularity.energy/open-grid-emissions/), or read more in our [announcement blog post](https://medium.com/singularity-energy/introducing-the-open-grid-emissions-initiative-42f68f3b3f49) or from [Canary Media](https://www.canarymedia.com/articles/emissions-reduction/open-sourcing-the-grid-emissions-data-needed-for-24-7-clean-energy).
+
+### MISO Historical Emissions Map
+
+![Map of MISO power plants and graph of annual grid fuel mix over time](https://raw.githubusercontent.com/singularity-energy/changelog/main/miso.png)
+
+We're also announcing the public release of our [MISO Historical Emissions Map](https://miso.singularity.energy/), a collaboration with MISO that shows plant-level historical emissions data going back through 2005. This map builds off the OGE data, and you can select the Daily or Hourly option to explore OGE in an interactive visualization.
+
+We've been working hard on both these projects for quite a while behind the scenes, and you can expect to see continued development and improvements in future changelogs.
+
+#### Other improvements and fixes:
+- Updated BPA scraper to add solar
+
 <sub>August 11, 2022</sub>
 ### Infrastructure Automation
 
