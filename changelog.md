@@ -1,3 +1,22 @@
+<sub>October 11, 2022</sub>
+### SOC 2
+Adding to the significant security and reliability improvements we've made this year, we've now formally begun the process of SOC 2 certification. We'll now have automated continuous monitoring of our infrastructure from [Drata](https://drata.com/) as we work towards a full external audit.
+
+Once certification is complete we'll make the full audit report available to anyone who wants it.
+
+#### We're hiring!
+If you know anyone who is passionate about decarbonization, has product management experience, and wants to learn more, check out the [job description][1] and please reach out!
+
+[1]: https://angel.co/company/singularity-energy/jobs/2412762-product-manager
+
+#### Other improvements and fixes:
+- OGE: [Fixed an issue affecting consumed emission rates](https://github.com/singularity-energy/open-grid-emissions/pull/221)
+- OGE: [Fixed several issues affecting SO2 calculations](https://github.com/singularity-energy/open-grid-emissions/pull/219)
+- OGE: [Updated AZPS data to handle incorrect reporting](https://github.com/singularity-energy/open-grid-emissions/pull/222)
+
+<br />
+<hr />
+
 <sub>September 9, 2022</sub>
 ### Open Grid Emissions Initiative
 
