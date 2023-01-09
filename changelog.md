@@ -1,3 +1,33 @@
+<sub>January 9, 2023</sub>
+### ERCOT
+Until now, ERCOT has been the lone major US ISO to not offer real-time fuel mix data. In its absence, we had to make do with their month-behind historical data and EIA's day-behind data. But despair no more, for real-time ERCOT is finally a reality! Try out the `ERCOT` region code in the `/latest` and `/search` endpoints of our API to see what's happening at this moment in Texas.
+
+Historical data has been moved to the `ERCOT-H` region - use that code to search for data from last year and earlier. Note that historical and real-time data have somewhat different fuel categories for the moment. In the coming months we'll analyze the relationship between the real-time and historical data sources and attempt to unify them.
+
+#### OGE 2021
+Waiting for 2021 Scope 2 emissions factors to complete your annual GHG inventory? Hourly, monthly, and annual-average 2021 factors for all U.S. grid regions are now available to download through the [Open Grid Emissions Initiative][2]! 
+
+See the full [release notes][2] of OGE v0.2.0 for the substantial list of improvements in addition to 2021 data.
+
+The Open Grid Emissions Initiative is based on the same underlying methodology and data sources as the U.S. EPA’s eGRID annual emissions factors, but integrates key innovations from peer-reviewed research to improve the coverage and granularity of the data. 
+
+The OGE dataset also includes hourly emissions data for every individual plant in the U.S., as well as other power system operational data, which is useful for analysts, researchers, and policymakers.
+
+#### We're hiring!
+If you know anyone who is passionate about decarbonization, has a few years of software engineering experience, and wants to learn more, check out the [job description][1] and please reach out!
+
+[1]: https://angel.co/company/singularity-energy/jobs/2518128-backend-software-engineer
+[2]: https://singularity.energy/open-grid-emissions
+[3]: https://github.com/singularity-energy/open-grid-emissions/releases/tag/v0.2.0
+
+#### Other improvements and fixes:
+- Consumed carbon intensity coverage substantially improved, ~98% of EIA carbon intensity events now have consumed rate
+- Historic `EEI` carbon intensity now available before 2/29/2020 when the BA was retired
+- Fixed a bug in the `/aggregate` endpoint that caused postal code queries to fail
+
+<br />
+<hr />
+
 <sub>October 11, 2022</sub>
 ### SOC 2
 Adding to the significant security and reliability improvements we've made this year, we've now formally begun the process of SOC 2 certification. We'll now have automated continuous monitoring of our infrastructure from [Drata](https://drata.com/) as we work towards a full external audit.
