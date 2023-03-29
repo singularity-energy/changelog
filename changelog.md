@@ -1,3 +1,22 @@
+<sub>March 29, 2023</sub>
+### Security Assessments
+As part of our security routine, we regularly engage with third party security firms to perform automated and manual assessments of our APIs and applications. The most recent assessments were completed this month, and found no issues of concern in any of our services.
+
+As noted in previous changelog editions, we've also undergone a full SOC 2 audit resulting in many improvements and a clean bill of health, and that report will be available within the next month.
+
+Please email info@singularity.energy if you'd like copies of these reports or have any other security questions.
+
+#### Other improvements and fixes
+- [OGE v0.2.1][1], fixing some inaccurate emissions and generation totals caused by mismatched data between EIA-860 and EIA-923
+- [OGE v0.2.2][2], fixing a bug that impacted CO2 emissions for some parts of the Southeastern US
+
+
+[1]: https://github.com/singularity-energy/open-grid-emissions/releases/tag/v0.2.1
+[2]: https://github.com/singularity-energy/open-grid-emissions/releases/tag/0.2.2
+
+<br />
+<hr />
+
 <sub>January 9, 2023</sub>
 ### ERCOT
 Until now, ERCOT has been the lone major US ISO to not offer real-time fuel mix data. In its absence, we had to make do with their month-behind historical data and EIA's day-behind data. But despair no more, for real-time ERCOT is finally a reality! Try out the `ERCOT` region code in the `/latest` and `/search` endpoints of our API to see what's happening at this moment in Texas.
