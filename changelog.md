@@ -1,3 +1,25 @@
+<sub>July 20, 2023</sub>
+### EIA Forecasts
+We've got some freshly baked forecasts, ready to serve! In addition to the existing five minute and hourly forecasts available for our real-time ISO regions, we now have hourly fuel mix and carbon intensity forecasts available for EIA regions, always reaching at least 24 hours into the future. At the moment this is only enabled for select regions (PSCO, WACM, and ERCO), but we'll be gradually rolling it out to cover more of the US. If you're interested in forecasting a particular region that we haven't covered yet, feel free to reach out to info@singularity.energy.
+
+#### Consumed Fuel Mix
+New in the V2 API, you can now see the [consumed fuel mix][2] of any EIA region, which accounts for imports and exports. You can find more information about what this is and why it's important [on our blog][3].
+
+#### Compliance API
+Our Compliance solution has some [new and improved documentation][1], in addition to new BERDO coverage for buildings in the city of Boston. We'll continue to expand our coverage to more cities and states in the US in the coming months.
+
+#### Other improvements and fixes
+- All regions now return consistent fuel mix categories. Previously, some regions could omit fuels when they didn't produce any power.
+- Data availability endpoint now shows expected latency for some regions and event types
+
+
+[1]: https://docs.singularity.energy/docs/compliance-api/1wv98xtxo41vu-singularity-compliance-api
+[2]: https://docs.singularity.energy/docs/singularity-api/consumed-fuel-mix
+[3]: https://medium.com/singularity-energy/what-is-consumed-carbon-intensity-and-why-is-it-important-3e272ee3e08c
+
+<br />
+<hr />
+
 <sub>March 29, 2023</sub>
 ### Security Assessments
 As part of our security routine, we regularly engage with third party security firms to perform automated and manual assessments of our APIs and applications. The most recent assessments were completed this month, and found no issues of concern in any of our services.
