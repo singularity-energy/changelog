@@ -1,3 +1,25 @@
+<sub>September 25, 2023</sub>
+
+### Québec Data Coverage
+
+Thanks to Hydro Québec's (HQT) recent work to publish their data, we have been able to integrate the HQT region into our data offering.
+Their data is available by specifying the region as "HQT" when querying our API. Their data is available in realtime and goes back to January 1st, 2019.
+
+#### Hourly Data Resolution
+
+Most of our API V2 endpoints now accept a new query parameter: "resolution". This allows users to query windows of data with a higher level of data granularity. By default, we previously only offered 5-minute intervals as the data resolution. If you wanted to have hourly summaries of the data, you would have had to do that yourself. Now you can specify "1h" or "5m" to signify that you would like a 1-hour or 5-minute resolution of data. If you do not include the new parameter, the default will be "5m" for all endpoints that accept the "resolution" parameter.
+
+#### Coming soon: Webhooks
+
+What data is available? When is new data available? When should I query to get the latest data for a region?
+
+Gone are the days of needing to set up complex client-side querying on your end. Instead, we offer a way to subscribe to new data, and receive it as soon as it's available. You can specify which region, event type and URL to send the data to and our infrastructure will handle delivery to your system. This feature will be enabled for paying customers only.
+
+If you'd like to beta test this new feature, please let us know! We'd be happy to set you up.
+
+<br />
+<hr />
+
 <sub>July 20, 2023</sub>
 ### EIA Forecasts
 We've got some freshly baked forecasts, ready to serve! In addition to the existing five minute and hourly forecasts available for our real-time ISO regions, we now have hourly fuel mix and carbon intensity forecasts available for EIA regions, always reaching at least 24 hours into the future. At the moment this is only enabled for select regions (PSCO, WACM, and ERCO), but we'll be gradually rolling it out to cover more of the US. If you're interested in forecasting a particular region that we haven't covered yet, feel free to reach out to info@singularity.energy.
