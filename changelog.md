@@ -1,3 +1,32 @@
+<sub>March 20, 2024</sub>
+
+### Webhooks
+
+As promised, we now have webhook support live in production. Instead of tuning your API request frequency to minimize latency, just pick the regions and event types you're interested in, sit back, and let us send you the data the instant it's available. You'll also receive any recent events that were updated after initial release, so you can be confident that you always have the latest and most accurate data.
+
+If this sounds interesting, [let us know][3] and we'll get you set up.
+
+#### New API Endpoints
+
+Two new endpoints in our V2 API: you can now use [latitude/longitude coordinates][4] or [a ZIP code][5] to look up the correct region code.
+
+#### Forecast Improvements
+
+We're continually tuning our forecast models to improve predictions, and expanding coverage to more regions. You can now request our new and improved [fuel mix][1] and [carbon intensity][2] forecasts for all the real-time ISOs (BPA, CAISO, ERCOT, ISONE, MISO, NYISO, PJM, SPP) as well as select other regions (AZPS, PSCO, TEPC, TVA, WACM). If you'd like to see forecasts for a region not listed here, [reach out][3]!
+
+#### Open Grid Emissions
+
+We've released OGE updates several times in the last few months, with the latest version at v0.3.3. Improvements include 2022 data, more data validation, and a number of code infrastructure and documentation updates. See the release notes here: https://github.com/singularity-energy/open-grid-emissions/releases.
+
+[1]: https://docs.singularity.energy/docs/singularity-api/grid-carbon-api/operations/get-a-generated-fuel-mix-forecast
+[2]: https://docs.singularity.energy/docs/singularity-api/grid-carbon-api/operations/get-a-generated-carbon-intensity-forecast
+[3]: mailto:info@singularity.energy
+[4]: https://docs.singularity.energy/docs/singularity-api/grid-carbon-api/operations/get-a-data-availability-coordinate
+[5]: https://docs.singularity.energy/docs/singularity-api/grid-carbon-api/operations/get-a-data-availability-zip-code
+
+<br />
+<hr />
+
 <sub>September 25, 2023</sub>
 
 ### Québec Data Coverage
