@@ -1,3 +1,30 @@
+<sub>July 3, 2024</sub>
+
+
+### Grid Carbon API
+
+We have rebranded our data product to "Grid Carbon API". Aside from a [face lift][2], this update now allows new (trial) users unrestricted access to our historical data for 60 days. Sign up for an account [here][1].
+
+#### Webhooks
+
+We have made reliability and stability improvements to our webhooks. If you are one of the few customers who have not yet migrated to using our webhooks feature, please [reach out to us][3] to get set up!
+
+#### Marginal data improvements
+
+In both the PJM and SPP regions, our marginal data accuracy has been improved. We now make sure to offer the latest marginal data that is available in both of those regions.
+
+#### Open Grid Emissions
+
+Over the last quarter, we have released OGE version v0.4.0. The improvements include better validation checks as well as using the IPCC Assessment Report to calculate CO<sub>2</sub>-equivalent values. See the full release notes [here][4].
+
+[1]: https://grid-carbon.singularity.energy/
+[2]: https://singularity.energy/grid-carbon-api
+[3]: mailto:info@singularity.energy
+[4]: https://github.com/singularity-energy/open-grid-emissions/releases.
+
+<br />
+<hr />
+
 <sub>March 20, 2024</sub>
 
 ### Webhooks
