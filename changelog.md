@@ -20,7 +20,7 @@ Over the last quarter, we have released OGE version v0.4.0. The improvements inc
 [1]: https://grid-carbon.singularity.energy/
 [2]: https://singularity.energy/grid-carbon-api
 [3]: mailto:info@singularity.energy
-[4]: https://github.com/singularity-energy/open-grid-emissions/releases.
+[4]: https://github.com/singularity-energy/open-grid-emissions/releases
 
 <br />
 <hr />
