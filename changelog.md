@@ -1,3 +1,25 @@
+<sub>May 20, 2025</sub>
+### Regional Fossil-Only Carbon Intensity
+
+There's a new endpoint in the Grid Carbon API: [generated fossil-only carbon intensity][1], which represents the combined carbon intensity of all fossil-fuel generators in a region. The endpoint accepts a list of up to 10 regions, so you can also request the fossil-only intensity of a multi-region area.
+
+This fossil-only data can be used as a conservative estimate for the "residual mix emission rate", or the emission rate of power that has not already been claimed through REC purchases or PPAs. [See our documentation][2] for a more detailed explanation.
+
+#### MISO Consumed Emissions
+
+[MISO's Consumed Emissions dashboard][3] leveraging CarbonFlow™ is live! We've released a new webpage and API allowing users to explore real-time and historical consumed emissions data at groundbreaking spatial granularity - down to the county level. Read more about our efforts to provide data that is orders of magnitude more detailed than the current industry standard in this new Canary Media article: https://www.canarymedia.com/articles/emissions-reduction/miso-carbon-tracking-data-singularity.
+
+Here's one quote from Singularity's research and policy lead Greg Miller: “Publicly accessible data at the hourly and county level is breaking new ground in the world of grid carbon accounting. This may be for only one region in the U.S. But it proves it’s possible to calculate this data — and other grid operators can do it too, if this data were required more broadly in accounting standards."
+
+#### Open Grid Emissions
+
+We have released OGE versions v0.5.0 and v0.6.0. The improvements include expanded historical coverage back to 2005, new 2023 data, aggregation at the subplant level, and other methodological and usability improvements. See the full release notes [here][4].
+
+[1]: https://docs.singularity.energy/docs/singularity-api/grid-carbon-api/operations/get-a-generated-carbon-intensity-fossil-only
+[2]: https://docs.singularity.energy/docs/singularity-api/key-concepts#regional-fossil-only-carbon-intensity
+[3]: https://miso.singularity.energy/consumed
+[4]: https://github.com/singularity-energy/open-grid-emissions/releases
+
 <sub>July 3, 2024</sub>
 
 
